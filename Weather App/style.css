@@ -1,0 +1,79 @@
+body{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #175676;
+  font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
+}
+.wrapper{
+  width: 75vmin;
+  height: auto;
+  background-color: #f2f2f2;
+  margin: 2vmin;
+  border-radius: 0.8em;
+}
+.weather-title{
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.weather-notification{
+
+}
+.weather-container{
+
+}
+.weather-icon{
+
+}
+.temperature-value{
+
+}
+.weather-description{
+
+}
+.weather-location{
+
+body{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #175676;
+  font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
+}
+.wrapper{
+  width: 75vmin;
+  height: auto;
+  background-color: #f2f2f2;
+  margin: 2vmin;
+  border-radius: 0.8em;
+}
+.weather-title{
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.weather-notification{
+
+}
+.weather-container{
+
+}
+.weather-icon{
+
+}
+.temperature-value{
+
+}
+.weather-description{
+
+}
+.weather-location{
+
+}
