@@ -1,16 +1,18 @@
 body{
   width: 100vw;
-  height: auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #175676;
-  font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
+  font-family: 'Montserrat', 'Poppins','Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .wrapper{
   width: 75vmin;
   height: auto;
-  background-color: #f2f2f2;
+  background-color: #D0FFD6;
   margin: 2vmin;
   border-radius: 0.8em;
 }
@@ -19,61 +21,52 @@ body{
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 600;
+  color: #202C59;
+  margin: 0;
+  padding: 0;
 }
 .weather-notification{
+  width: auto;
+  height: auto;
+  background-color: #CABAC8;
+  text-align: center;
+  color: #ff0000;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0 2vmin; 
+  padding: 1.5em 1em;
+  border-radius: 0.5em;
 
 }
 .weather-container{
-
-}
-.weather-icon{
-
-}
-.temperature-value{
-
-}
-.weather-description{
-
-}
-.weather-location{
-
-body{
-  width: 100vw;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #175676;
-  font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
-}
-.wrapper{
-  width: 75vmin;
-  height: auto;
+  flex-direction: column;
   background-color: #f2f2f2;
-  margin: 2vmin;
-  border-radius: 0.8em;
-}
-.weather-title{
-  text-align: center;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.weather-notification{
 
 }
-.weather-container{
-
+.weather-icon img{
+  height: 8em;
+  width: auto;
 }
-.weather-icon{
 
-}
 .temperature-value{
+  font-size: 4em;
+  color: #1D2F6F;
+  font-weight: 700;
 
 }
 .weather-description{
+  font-size: 2em;
+  color: #A167A5;
+  font-weight: 600;
+  text-transform: uppercase;
 
 }
 .weather-location{
-
+  font-size: 2em;
+  color: #36382E;
+  font-weight: 600;
 }
+

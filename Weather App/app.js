@@ -1,6 +1,6 @@
 
 // Select DOM Elements
-const weatherNotification = document.querySelector(".weather-notification p");
+const weatherNotification = document.querySelector(".weather-notification");
 const weatherIcon = document.querySelector(".weather-icon");
 const temperatureValue = document.querySelector(".temperature-value p");
 const weatherDescription = document.querySelector(".weather-description p");
@@ -16,9 +16,11 @@ weatherInfo.temperature={
 // Check Geolocation on browser
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
+    weatherNotification.hidden = true;
 }else{
     weatherNotification.style.display = "block";
-    weatherNotification.textContent = "Browser doesn't Support Geolocation!";
+    weatherNotification.textContent = "<p>Browser doesn't Support Geolocation!</p>";
+    weatherNotification.hidden=true;
 }
 
 // Creating the setPosition Function
@@ -46,7 +48,7 @@ async function getWeather(lat, lon) {
     const data = await response.json()
 
     weatherInfo.icon = data.weather[0].icon;
-    weatherInfo.temperature.value = data.main.temp;
+    weatherInfo.temperature.value = (data.main.temp).toFixed(1);
     weatherInfo.description = data.weather[0].description;
     weatherInfo.city = data.name;
     weatherInfo.country = data.sys.country;
