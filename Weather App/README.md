@@ -1,2 +1,2 @@
-# A-responsive-Boot-Camp-Website
-Website is built using HTML5, CSS3, and CSS Flexbox.
+# Simple Weather App
+Weather App is a program created with Vanilla JavaScript, HTML5 and CSS3.
