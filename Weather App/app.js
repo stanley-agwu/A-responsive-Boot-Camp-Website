@@ -35,6 +35,7 @@ async function setPosition(position) {
 async function showError(error) {
     weatherNotification.style.display = "block";
     weatherNotification.textContent = error.message;
+    weatherLocation.hidden=true;
 }
 
 const API_KEY=enter_API_KEY;
