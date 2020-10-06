@@ -27,7 +27,7 @@ if('geolocation' in navigator){
 async function setPosition(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
-    
+
     getWeather(lat, lon);
 }
 
@@ -43,7 +43,7 @@ const API_KEY=enter_API_KEY;
 // Creating the getWeather Function to fetch API data
 async function getWeather(lat, lon) {
     let API_URL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-    
+
     console.log(API_URL)
     const response = await fetch(API_URL)
     const data = await response.json()
@@ -74,10 +74,10 @@ const celsiusTofarenheit = temperature => {	return (temperature * 9/5).toFixed(1
 // Adding Event Listener to the temperature parameter
 temperatureValue.addEventListener("click", event => {
     if(weatherInfo.temperature.value === undefined) return;
-    
+
     if(weatherInfo.temperature.unit == "celsius"){
         const fahrenheit = celsiusTofarenheit(weatherInfo.temperature.value);
-        
+
         temperatureValue.textContent = `${fahrenheit}°<span>F</span>`;
         weatherInfo.temperature.unit = "fahrenheit";
     } else {

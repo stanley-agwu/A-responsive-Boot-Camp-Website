@@ -1,17 +1,14 @@
 body{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #175676;
+  background-color: #9DD1F1;
   font-family: 'Montserrat', 'Poppins','Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
 .wrapper{
-  min-width: 50%;
-  height:auto; 
+  width: 600px;
+  max-width: 90%;
+  height:auto;
+  margin: 10px auto;
   background-color: #D0FFD6;
   border-radius: 20px;
 }
@@ -22,7 +19,7 @@ body{
   font-weight: 600;
   color: #202C59;
   margin: 0;
-  padding: 0;
+  padding: 1px 0;
 }
 .weather-notification{
   width: 94%;
@@ -33,8 +30,7 @@ body{
   font-size: 2em;
   font-weight: 700;
   padding: 3%;
-  border-radius: 0.5em;
-
+  border-radius: 0.2em;
 }
 .weather-container{
   display: flex;
@@ -42,6 +38,7 @@ body{
   align-items: center;
   flex-direction: column;
   background-color: #f2f2f2;
+  border-radius: 20px;
 
 }
 .weather-icon img{
@@ -66,6 +63,4 @@ body{
   font-size: 2em;
   color: #36382E;
   font-weight: 600;
-
 }
-
