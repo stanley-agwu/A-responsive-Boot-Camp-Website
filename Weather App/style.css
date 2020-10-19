@@ -6,8 +6,9 @@ body{
 }
 .wrapper{
   width: 600px;
+  height: 90%;
   max-width: 90%;
-  height:auto;
+  max-height: 95%;
   margin: 10px auto;
   background-color: #D0FFD6;
   border-radius: 20px;
@@ -20,10 +21,11 @@ body{
   color: #202C59;
   margin: 0;
   padding: 1px 0;
+  height: 10%;
 }
 .weather-notification{
   width: 94%;
-  height: auto;
+  height: 10%;
   background-color: #CABAC8;
   text-align: center;
   color: #ff0000;
@@ -33,23 +35,30 @@ body{
   border-radius: 0.2em;
 }
 .weather-container{
+  background-color: #f2f2f2;
+  margin: 0 auto 5px;
+  width: 90%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f2f2f2;
-  border-radius: 20px;
 
+}
+.weather-icon{
+  height: 25%;
 }
 .weather-icon img{
   height: 100%;
   width: auto;
+ 
 }
 
 .temperature-value{
   font-size: 4em;
   color: #1D2F6F;
   font-weight: 700;
+  height: 25%;
 
 }
 .weather-description{
@@ -57,10 +66,12 @@ body{
   color: #A167A5;
   font-weight: 600;
   text-transform: uppercase;
+  height: 25%;
 
 }
 .weather-location{
   font-size: 2em;
   color: #36382E;
   font-weight: 600;
+  height: 25%;
 }
